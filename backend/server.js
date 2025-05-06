@@ -27,7 +27,7 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')));
 
 //db config
-mongoose.connect(process.env.MONGO_URI, {
+mongoose.connect("mongodb+srv://varun:29112002VrB@cluster0.c81dkme.mongodb.net/to_do_app?retryWrites=true&w=majority", {
     useNewUrlParser: true,
 }, (err) => {
     if (err) {
@@ -45,7 +45,7 @@ app.use("/api/forgotPassword", forgotPasswordRouter)
 // The "catchall" handler for any request that doesn't match the ones above
 // This ensures React router can handle routes properly
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 //listen
