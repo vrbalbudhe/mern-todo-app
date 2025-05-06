@@ -44,7 +44,7 @@ function Login() {
           <div className="md:w-1/2 p-8 md:p-12">
             <div className="mb-8 text-center">
               <h2 className="text-3xl font-extrabold text-gray-900">
-                Welcome back
+                Welcome MITAOE
               </h2>
               <p className="mt-2 text-sm text-gray-600">
                 Sign in to your account
